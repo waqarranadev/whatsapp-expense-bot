@@ -1,0 +1,9 @@
+node_modules/
+dist/
+*.tsbuildinfo
+.env
+
+# whatsapp-web.js local session/cache (contains your WhatsApp login)
+.wwebjs_auth/
+.wwebjs_cache/
+*.zip

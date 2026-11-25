@@ -1,0 +1,66 @@
+{
+  "name": "whatsapp-expense-bot",
+  "version": "1.0.0",
+  "description": "AI-powered WhatsApp expense tracker for Roman Urdu/English messages, with budgets and reports (NestJS + MongoDB)",
+  "main": "dist/main.js",
+  "scripts": {
+    "build": "nest build",
+    "start": "node dist/main.js",
+    "dev": "nest start --watch",
+    "typecheck": "tsc --noEmit",
+    "test": "jest --passWithNoTests"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "^11.17.0",
+      "onFail": "download"
+    }
+  },
+  "dependencies": {
+    "@nestjs/common": "^11.2.11",
+    "@nestjs/config": "^4.0.4",
+    "@nestjs/core": "^11.2.11",
+    "@nestjs/mongoose": "^11.0.4",
+    "mongoose": "^9.12.3",
+    "nestjs-pino": "^5.3.2",
+    "pino": "^10.4.0",
+    "pino-http": "^11.0.0",
+    "qrcode-terminal": "^0.12.0",
+    "reflect-metadata": "^0.2.2",
+    "rxjs": "^7.8.2",
+    "whatsapp-web.js": "^1.34.8",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@nestjs/cli": "^11.0.24",
+    "@nestjs/testing": "^11.2.11",
+    "@types/jest": "^30.0.0",
+    "@types/node": "^24.19.2",
+    "@types/qrcode-terminal": "^0.12.2",
+    "jest": "^30.5.2",
+    "pino-pretty": "^13.2.0",
+    "ts-jest": "^29.4.15",
+    "typescript": "~5.9.3"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "ts"
+    ],
+    "rootDir": "src",
+    "testRegex": ".*\\.spec\\.ts$",
+    "transform": {
+      "^.+\\.ts$": "ts-jest"
+    },
+    "testEnvironment": "node"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/waqarranadev/whatsapp-expense-bot.git"
+  }
+}
